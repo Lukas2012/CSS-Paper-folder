@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>CSS3 paperfold</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="foldeing a paper with CSS3 and jQuery" />
+		<meta name="author" content="Gregor Adams" />
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="jquery-1.7.1.js"></script>
+		<script src="jquery.foldit.js"></script>
+    </head>
+    <body>
+        <div class="optionswrapper">
+			<h1>Folding a paper with jQuery and CSS3</h1>
+			<h3>change the fold-intensity, the height of the fold section and the paper color</h3>
+			<button id="animate_button">animation</button><br/>
+			<label>Fold intensity:</label>
+			<input class="perc" type="range" value="50"  min="0" max="99"/>
+			<span id="percentage">50</span>
+			<span class="suffix">%</span></br>
+			<label>Section height:</label>
+			<input class="heig" type="range" value="200" min="50" max="300" />
+			<span id="height">200</span>
+			<span class="suffix">px</span><p></p>
+			<label>Paper color:</label><br/>
+			<span class="prefix">r</span>
+			<input class="colorR" type="range" value="222" min="0" max="255" />
+			<span id="red">222</span><br/>
+			<span class="prefix">g</span>
+			<input class="colorG" type="range" value="222" min="0" max="255" />
+			<span id="green">222</span><br/>
+			<span class="prefix">b</span>
+			<input class="colorB" type="range" value="222" min="0" max="255" />
+			<span id="blue">222</span><p></p>
+        </div>
+		<!--
+		<h3>2. Set the new values</h3>
+		<button id="setter">Set</button><br/>
+		<h3>3. Fold the paper</h3>
+		<button id="folder">fold</button><p><br/></p>
+		-->
+		<div class="wrapper">
+			<div class="partwrap">
+				<div class="part"></div>
+				<div class="part"></div>
+			</div>
+			<div class="partwrap">
+				<div class="part"></div>
+			</div>
+		</div>
+    </body>
+</html>
+​

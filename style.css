@@ -1,0 +1,116 @@
+* {
+    -webkit-user-select:none;
+    cursor:default;
+}
+body {
+    font-family: Helvetica, Arial,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {
+    font-size: 25px;
+    font-weight:bold;
+}
+h3 {
+    font-size: 16px;
+    font-weight:bold;
+    color:#00f;
+}
+#red,
+#green,
+#blue,
+#percentage,
+#height,
+.prefix,
+.suffix {
+    font-size: 22px;
+    font-weight:bold;
+    font-family: Monospace;
+}
+button,
+input,
+label{
+    font-size: 18px;
+    font-weight:bold;
+    color:#999;
+    font-family: Monospace;
+}
+input {
+    color:#111;
+    cursor:pointer !important;
+}
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #fff;
+    margin:5px;
+    border-radius: 30px;
+    height: 30px;
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.8) inset,
+    0px 15px 0px rgba(0,0,0,0.05) inset;
+    border: 1px #ccc solid;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: -webkit-linear-gradient(top, #aeaeae 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    width: 28px;
+    height: 28px;
+    margin:1px;
+    border-radius: 30px;
+    box-shadow: 0 1px 2px rgba(255,255,255,0.9),
+    1px 1px 2px rgba(0,0,0,0.3);
+    border: 1px #bbb solid;
+}
+.prefix{
+    margin-left:155px;
+}
+.wrapper.animate ,
+.wrapper.animate .partwrap,
+.wrapper.animate .part{
+    -webkit-transition: all 500ms;
+}
+#animate_button{
+    background-color: #e00;
+    color:#fff;
+}
+#animate_button.active{
+    background-color: #0e0;
+}
+.wrapper {
+    width: 400px;
+    margin-left: 60px;
+    -webkit-transform: translateY(0px) translateX(0px);
+    z-index: 0;
+    position:relative;
+}
+.optionswrapper {
+    position:relative;
+    z-index:99;
+}
+.wrapper .partwrap{
+    -webkit-transform: translateY(0px);
+}
+.wrapper .part{
+    height:200px;
+    -webkit-transform:skewX(0deg) scaleY(1);
+    background: rgb(222, 222, 222);
+    box-shadow: -4px 4px 2px rgba(0,0,0,0.2),
+        0 0 0 rgba(0,0,0,0.0) inset,
+        0 0 0 rgba(0,0,0,0.0) inset;
+    padding: 0 20px;
+    line-height:20px;
+}
+.wrapper .part:nth-child(1){
+    -webkit-transform-origin: 0% 100%;
+}
+.wrapper .part:nth-child(2){
+    -webkit-transform-origin: 0% 0%;
+}
+
+
+​
